@@ -501,3 +501,31 @@ body.hovering .cursor-outline {
         cursor: pointer !important;
     }
 }
+
+/* --- 404 PAGE STYLE UPDATES --- */
+.error-code {
+    font-size: 14rem; 
+    font-weight: 1000; 
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    
+    background: linear-gradient(135deg, var(--text-main) 30%, var(--accent-green) 50%, var(--text-main) 70%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: textShine 5s linear infinite;
+}
+
+.error-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    .error-code { font-size: 8rem; } 
+    .error-subtitle { font-size: 2rem; }
+}
